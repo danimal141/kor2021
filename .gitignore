@@ -1,6 +1,6 @@
 .envrc
 .DS_Store
-dist/
+slides-export.pdf
 
 # Yarn
 /node_modules
