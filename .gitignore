@@ -1,5 +1,6 @@
 .envrc
 .DS_Store
+dist/
 
 # Yarn
 /node_modules
