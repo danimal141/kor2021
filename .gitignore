@@ -1,0 +1,9 @@
+.envrc
+.DS_Store
+
+# Yarn
+/node_modules
+/.pnp
+.pnp.js
+yarn-debug.log*
+yarn-error.log*
