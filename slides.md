@@ -1,9 +1,10 @@
 ---
 # try also 'default' to start simple
-theme: seriph
+theme: default
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: https://source.unsplash.com/collection/94734566/1920x1080
+# background: https://images.unsplash.com/photo-1578352055395-2dde93f2ee92?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHw5NDczNDU2Nnx8fHx8fHwxNjM0NzAzNzQ3&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920
 # apply any windi css classes to the current slide
 class: 'text-center'
 # https://sli.dev/custom/highlighters.html
@@ -21,65 +22,339 @@ drawings:
   persist: false
 ---
 
-# サンプルです
+# 事業に向き合い続けたい私は、それでもRailsを使い続ける
 
-てすとてすと
-
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
+<div class="m-20">
+  <p>@danimal141</p>
+  <p>Kaigi on Rails 2021</p>
 </div>
 
-<div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
-    class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
-  </a>
-</div>
+---
+layout: center
+---
+
+## 今回、私はこういう話をするために来ました
+
+---
+layout: center
+---
+
+## エンジニアの責任とは「ただ技術をマスターすることではなく、技術を使って事業上の課題を解決すること」ではないか
+
+---
+layout: center
+---
+
+## それを達成するための武器として、Railsって最高では？
 
 <!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
+- 事業として本来やるべきコアな機能開発に集中できる
+- ただ近年の技術進化や技術トレンドの変化によってRails以外にも様々な選択肢が出てきており、技術選定 is 難しい
+- Railsの良さは活かしつつ、コトに向き合っていきたい
 -->
 
 ---
+layout: center
+---
 
-# テスト
-
-てすてす
-
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
-
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
--->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
+Railsですべての課題を解決できるわけではない
+## モダンな技術の力も借りてコトに向き合っていきたいすね
 
 ---
 
+# 自己紹介
+
+<br />
+<br />
+
+- @danimal141
+- フロントエンドエンジニアとしてキャリアスタート
+  - ベンチャー -> ソシャゲの会社 -> (7年ぐらい) 創業メンバーとしてスタートアップへ -> (今ここ) Speee
+  - 0→1開発が多め、エンジニア採用関連の仕事もやりがち
+  - (得意) 自分が一生懸命書いたコードを何のためらいもなく削除することッ！
+- エンジニア歴10年ぐらい
+  - Rails歴は8年ぐらい
+
+---
+
+# アジェンダ
+
+<br />
+<br />
+
+- スタートアップでスキルコレクターになった話
+- 技術を使って事業上の課題を解決することに向き合っていきたいという話
+- 事業を成長させるための武器としてRails最高では？でも辛みもあるのでは？という話
+- Railsとモダンな技術を良いとこ取りを試みた、直近のプロジェクトの話
+- まとめ
+
+---
+layout: center
+---
+
+# スタートアップでスキルコレクターになった話
+
+---
+layout: center
+---
+
+# 突然なんですけど
+
+---
+
+# エンジニアの方なら一度はこんなこと考えたことないですか？
+
+<br />
+<br />
+
+- 最近はGoやRustが流行ってるらしいから使ってみたいなぁ
+- サーバサイドKotlinとかめっちゃイケてませんか？
+- このままでいいのか、モダンな技術を習得して変化しないといけないんじゃないか...
+
+---
+layout: center
+---
+
+# わかる
+
+---
+layout: center
+---
+
+# めちゃめちゃわかる
+
+---
+
+# 過去の技術選定 (特にスタートアップ時代)振り返り
+
+<br />
+<br />
+
+<!-- スタートアップで自社開発がうまくいっていなかった時、受託開発もしていた -->
+- ~~受託開発なのを良いことに~~ 1ミリも使ったことないのに急にGoでAPI実装しちゃう
+- ~~受託開発なのを良いことに~~ 発表されたばかりのSwiftでiOS開発しちゃう
+<!-- この当時、これが初めてのiOS開発です -->
+- 社内のデータ分析基盤を作るためのデータ収集コマンドが急にKotlinで実装されちゃった
+<!-- 「あ、ここに手を加える場合はまずKotlinをキャッチアップしてください」みたいになっちゃっていた -->
+
+<br />
+<br />
+
+もちろんそれぞれ、それなりの理由はあったのですが、「モダンだからひとまず使ってみたい、知らない技術をキャッチアップしたい」というモチベーション駆動技術選定だったことは否めないと思っています。
+
+I'm a skill collector!
+
+---
+
+# もやっとポイント
+
+<br />
+<br />
+
+- やはりエンジニアならモダンな技術を使いたい！マスターしたい！!
+  - 「達人プログラマーなら毎年少なくとも一つの言語を学習します」 -> 本当に？
+  - 自分が一番得意な技術がオワコンって言われていてツライ！！
+- あれ、そもそもなんでそんなに新しい技術マスターしたいんだっけ？マスターして何するんだっけ？
+- 使ったとして自分以外、誰か嬉しいんだっけ？
+  - 🧑‍💻 それって事業に貢献できるの？ユーザの役に立つの？
+  - 🧑‍💻 チームのエンジニア全員、その技術覚えないといけないけど、大丈夫そ？
+  - 🧑‍💻 今後、チーム拡大する時、採用大丈夫そ？
+- 技術選定 is 難しい...
+
+---
+layout: center
+---
+
+## 何を軸に考えればええんや...技術との向き合い方に迷走する
+
+---
+layout: center
+---
+
+# 技術を使って事業上の課題を解決することに向き合っていきたいという話
+
+---
+
+# そもそも技術選定って何のためにするんだっけ？
+
+スタートアップや0→1開発をメインでやってきた私の場合
+<br />
+<br />
+
+<!-- 自分が0→1開発ばかり今までやってきたので偏った目線ではある -->
+<!-- 何を成し遂げたいのかが大事 -->
+- 世の中やユーザのニーズは日々変化するし、早くリリースして、早くユーザのフィードバックを得て改善していく必要がある
+  - Done is better than perfect...
+  - 特にスタートアップの場合、「ユーザに価値を届ける or DIE」
+- これを達成し続けられる状態にできるかどうか
+
+---
+layout: center
+---
+
+## エンジニアの責任とは「ただ技術をマスターすることではなく、技術を使って事業上の課題を解決すること」ではないか
+
+<!-- 新しい技術をマスターすることはもちろん楽しいけど、それが主目的じゃないよね -->
+
+---
+layout: center
+---
+
+# 事業を成長させるための武器としてRails最高では？でも辛みもあるのでは？という話
+
+---
+layout: center
+---
+
+## ここで気づいてしまいましたッ！
+
+---
+layout: center
+---
+
+## Railsって良くないですか？
+
+---
+
+# 過去の技術選定 (特にスタートアップ時代)振り返りv2
+
+<br />
+<br />
+
+- 確かに受託開発でモダンな技術を試しまくったりした
+  - ~~楽しかったなぁ🕺~~
+- 社内のデータ分析基盤を作るためのデータ収集コマンドをKotlinで実装したこともあった
+  - ~~楽しかったなぁ🕺~~
+- でも、「なにかしらユーザに価値を届けたい」、「ユーザのためにプロダクトをとにかく高速に育てていきたい」、そういった場面では常にRailsを採用してきた
+  -  それが事業上の目的を達成するための最速、最良の選択だと思っていたから
+
+---
+
+# Railsの好きな所
+
+<br />
+<br />
+
+- 事業として本来やるべきコアな機能開発に集中することができる
+  - レールが用意されているので、「どういう構成で作ろう」、「どうやって作ろう」みたいな部分でそこまで悩まない
+  - ActiveRecord is 最高
+  - エコシステム(Gem)の充実
+  <!-- 良い意味で枯れている -->
+- 0→1開発に向いている
+  - まず動くものを作り、ユーザのフィードバックを受けながらプロダクトを高速に改善して育てていくスタイル
+
+---
+layout: center
+---
+
+# 一方で
+
+---
+
+# Railsでこういう時ちょっと辛くないですか？
+
+<br />
+<br />
+
+- フロントエンドどうする問題
+  - ユーザの目が肥えてリッチなアプリケーションが標準みたいになってきている
+  - 細かいサイクルで変化するフロントエンドのViewをjQueryやBackbone.jsで実現するのは厳しい (個人の意見です)
+  - もちろんHotwireのようなソリューションもあるが、ReactやVueと比較すると情報量やユーザ数は少なく、何かハマった時ツラそう...
+<!-- グローバルスコープでCSS書くの、独自のスコープを持たせる仕組みとか考えたこともあったけどツラいなど -->
+
+<br />
+<br />
+
+
+---
+layout: center
+---
+
+## こういったRailsのメリット、デメリットを踏まえて
+
+---
+layout: center
+---
+
+# Railsとモダンな技術を良いとこ取りを試みた、直近のプロジェクトの話
+
+---
+
+# 直近のプロジェクトの話
+
+<br />
+<br />
+
+不動産領域で新規プロダクトを開発しています！
+
+- ユーザと不動産会社の担当者がやり取りするチャットUI
+  - リアルタイム更新
+  - toB向け、toC向けにそれぞれプロダクトを提供する
+- 複雑な条件入力フォーム
+
+---
+
+# 技術選定軸
+
+<br />
+<br />
+
+- なるべく事業に必要なコアな機能開発に集中したい
+  - コアじゃないことであまり悩みたくない、なるべく楽したい
+- リッチなフロントエンド開発に耐えられるような構成にしたい
+
+---
+
+# Backend
+- Rails (API)
+  - Rails Wayに乗ることで本来やるべきコアな機能開発に集中したい
+  - メンバーが使い慣れている
+- GraphQL
+  - 不動産領域を扱っており「物件とそれに紐づく様々な情報」という関係性のデータ構造が多く、かつ肝になる
+  - 型定義によるバリデーションがあり、フロントエンドでTypeScriptを使う想定だったので相性が良い
+  - チャットでリアルタイム更新があり、Subscriptionが使えそう (GraphQL Proを使っています)
+<!-- RESTのAPIみたいにエンドポイント設計であまり悩まなくて良い印象 (これはPUT？PATCH？リソース名どうする？) -->
+- Auth0
+  - 認証、認可などアプリケーション上、必要だがプロダクトにとってコアではないものはできるだけショートカットしたい
+
+---
+
+# Frontend (toB、toCがある)
+- React.js
+  - チャットUIのような複雑なViewの開発が求められたのでReactかVueを使いたい
+  - メンバーが使い慣れている、TypeScriptとの親和性を考慮してReact
+- TypeScript
+  - クリックやスクロールのように、ユーザ起点でのイベントが大量に発生するフロントエンドを中長期的に生産性高く開発する上で必須と考えた
+
+---
+
+## Infra
+
+あまり詳細触れないですが、開発生産性を高めるような技術を積極的に採用しています！
+
+<br />
+
+- AWS
+- Kubernetes
+- Terraform
+
+---
+
+# まとめ
+
+<br />
+<br />
+
+- 自分の成すべきこと、目的からブレずに意思決定をするのが大切
+- エンジニアの役割とは「ただ技術をマスターすることではなく、技術を使って事業上の課題を解決すること」
+- 事業の課題を解決していく上でRailsってやっぱり良いっすね、でも辛い時もあるっすね
+- Railsの良さを活かしつつ、モダンな技術も採用して、コトに向き合って行きましょう💪😎
+
+<br />
+<br />
+
+プロジェクトの具体的な話などはあまり詳しくお話できていないので、もし興味持ってくださった方はQAブースでお待ちしております！
+
+<br />
+
+ただの雑談や家の売却や購入を検討されている方も大歓迎です🙋‍♂️
